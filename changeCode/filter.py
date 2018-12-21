@@ -1,5 +1,7 @@
 import json
 import uuid
+
+
 # 传入解码后的json文件，返回一个字符串数组，其中的每一个元素都是一个function
 def get_functions(file_content):
     functions = []                           # 存储返回的字符串数组
@@ -13,21 +15,18 @@ def get_functions(file_content):
         willBreak = False        # 判断是否需要跳出外层循环
         if tokens[index]['sem'] == 'FunctionDecl':
             temp_tokens = []
-            # 如果是形如'int func(int, int);'的函数声明，需要去掉，这里假设负号的sem属性为'FunctionDecl'
-            # 先一口气扫描到';'，如果所有的token都在一行，说明是形如上面提到的函数声明，干掉；反之，则进行函数分割
-            temp_line_num = tokens[index]['line']       # 暂存当前token的行号
-            is_just_func_decl = True                  # 标记是否是简单的函数声明
 
             # 去除简单的函数声明
+            # 如果是形如'int func(int, int);'的函数声明，需要去掉，这里假设符号的sem属性为'FunctionDecl'
+            # 先一口气扫描到')'，然后判断下一个字符是不是'{'，如果是，则进行函数分割；反之，说明是形如上面提到的函数声明，干掉
             index2 = index
             while index2 < len(tokens):
                 current_token = tokens[index2]
-                if current_token['line'] != temp_line_num:
-                    is_just_func_decl = False
-                if current_token['text'] == ';':
+                if current_token['text'] == ')' and current_token['sem'] == 'FunctionDecl':
                     break
                 index2 += 1
-            if is_just_func_decl:
+            # 如果下一个是'{'的话，就不做处理；否则，就跳过
+            if index2 < len(tokens) - 1 and tokens[index2 + 1]['text'] != '{':
                 index = index2 + 1
                 continue
 
@@ -54,6 +53,7 @@ def get_functions(file_content):
             index += 1
 
     return functions
+
 
 # 传入上一步切割好的token数组，返回一个字符串，为一个function
 def get_function(tokens):
@@ -159,6 +159,6 @@ if __name__ == '__main__':
         function = function+ "\n}"
         f = open(str(uuid.uuid1())+'.c', errors='ignore',mode='w')
         f.write(function)
-        #print(function)
-        #print('-----------------------------')
+        # print(function)
+        # print('-----------------------------')
 
