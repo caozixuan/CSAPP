@@ -31,6 +31,11 @@ for token in tokens:
         formals.append(variable_name)
     elif token['sem']=="ParmDecl":
         continue
+    elif token['kind'] == 'Identifier' and tokens[tokens.index(token)-1]['text']=='='\
+        and tokens[tokens.index(token)-1]['kind']=='Identifier' and token['sem']=='DeclRefExpr':
+        if 'sym' in token and token['sym']!=None:
+            C_String = C_String + "rand();"
+            over_look = True
     elif token['kind'] == 'Identifier':
         if token['text'] in variable_match:
             C_String = C_String + variable_match[token['text']] + " "
