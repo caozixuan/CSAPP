@@ -65,20 +65,25 @@ def get_function(tokens):
     formals = []
     variable_match = {}
     i=0
+    keywords = ['pthread_mutex_lock','pthread_mutex_unlock','pthread_cond_signal','NULL','malloc','free','sizeof','pthread_cond_wait']
     while(i<len(tokens)):
-        if tokens[i]['text']=='else' and tokens[i+1]['text']=='if':
-            print('hello!')
         if tokens[i]['line'] > line_num:
             line_num = tokens[i]['line']
             C_String += '\n'
+        if tokens[i]['text'] in keywords:
+            C_String = C_String + tokens[i]['text']
         # 收集函数参数，将其作为函数开始后的变量声明
-        if tokens[i]['kind'] == 'Identifier' and tokens[i]['sem'] == "ParmDecl":
+        elif tokens[i]['text']=="{" and tokens[i-1]['sem']=='FunctionDecl':
+            i+=1
+            continue
+        elif tokens[i]['kind'] == 'Identifier' and tokens[i]['sem'] == "ParmDecl":
             variable_match[tokens[i]['text']] = "entity_" + str(entity_counter)
             entity_counter += 1
-            variable_name = tokens[i]['sym']['type'] + variable_match[tokens[i]['text']]
+            variable_name = tokens[i]['sym']['type'] + " "+variable_match[tokens[i]['text']]
             formals.append(variable_name)      # formals 后面再处理
-        elif tokens[i]['sem'] == "ParmDecl":
-            i+=1                               # 函数参数中其他部分直接忽略
+        elif tokens[i]['sem'] == "ParmDecl" or tokens[i]['sem']=='FunctionDecl':
+            i+=1                              # 函数参数中其他部分直接忽略
+            continue
         # 形如 int i = foo()形式的，直接将foo()替换为rand()
         elif tokens[i]['kind'] == 'Identifier' and tokens[i-1]['text'] == '=' \
                 and tokens[i-2]['kind'] == 'Identifier' and tokens[i]['sem'] == 'DeclRefExpr':
@@ -88,7 +93,7 @@ def get_function(tokens):
                 while tokens[i]['text']!=';':    # 遇到;作为结束标志
                     i+=1
         # 处理形如while(foo()) while(!foo()) if(foo()) if(!foo())形式
-        elif tokens[i]['kind'] == 'Identifier' and (tokens[i-1]['text'] == '('or tokens[i-1]['text'] == '!') \
+        elif tokens[i]['kind'] == 'Identifier' and (tokens[i-1]['text'] == '('or tokens[i-1]['text'] == '!') and tokens[i-1]['sem']!='FunctionDecl'\
                 and (tokens[i-1]['sem'] == 'IfStmt' or tokens[i-1]['sem'] == 'WhileStmt'or tokens[i-1]['sem']=='DeclRefExpr' or tokens[i-1]['sem']=='UnaryOperator'):
                 C_String = C_String + "rand()"
                 counter = 1
@@ -138,6 +143,8 @@ def get_function(tokens):
                 formal_string = 'char ' + formal[formal.index('entity'):] + '[10];'
             elif 'int' in formal:
                 formal_string = 'int ' + formal[formal.index('entity'):] + '[10];'
+            elif 'void' in formal:
+                formal_string = 'void*' + formal[formal.index('entity'):] + ';'
         # char 与 int类型
         else:
             if 'char' in formal:
@@ -150,13 +157,12 @@ def get_function(tokens):
 
 
 if __name__ == '__main__':
-    file = open('c.json', errors='ignore')
+    file = open('condvarwait.json', errors='ignore')
     file_content = json.loads(file.read())
 
     result = get_functions(file_content)
     for function in result:
-        function = "int main(){\n"+function
-        function = function+ "\n}"
+        function = "#include<stdlib.h> \nint main(){\n"+function+"\nreturn 0\n}"
         f = open(str(uuid.uuid1())+'.c', errors='ignore',mode='w')
         f.write(function)
         # print(function)

@@ -1,0 +1,690 @@
+{
+    "filename": "/sa-bAbI/tokenizer/bin/condvarwait.c",
+    "tokens": [
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Identifier",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@bioWaitStepOfType",
+                "kind": "FunctionDecl",
+                "type": "unsigned long long (int)"
+            },
+            "text": "bioWaitStepOfType"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 2,
+            "sem": "ParmDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 2,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:condvarwait.c@56@F@bioWaitStepOfType@type",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 2,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 3,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:condvarwait.c@72@F@bioWaitStepOfType@S@pthread_mutex_t",
+                "kind": "StructDecl",
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 3,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 4,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:condvarwait.c@102@F@bioWaitStepOfType@BIO_NUM_OPS",
+                "kind": "VarDecl",
+                "type": "int"
+            },
+            "text": "BIO_NUM_OPS"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "VarDecl",
+            "text": "="
+        },
+        {
+            "kind": "Literal",
+            "line": 4,
+            "sem": "IntegerLiteral",
+            "text": "100"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 4,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "static"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Keyword",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:condvarwait.c@129@F@bioWaitStepOfType@bio_pending",
+                "kind": "VarDecl",
+                "type": "unsigned long long [BIO_NUM_OPS]"
+            },
+            "text": "bio_pending"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 5,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:condvarwait.c@102@F@bioWaitStepOfType@BIO_NUM_OPS",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/condvarwait.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "BIO_NUM_OPS"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "VarDecl",
+            "text": "static"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:condvarwait.c@185@F@bioWaitStepOfType@bio_mutex",
+                "kind": "VarDecl",
+                "type": "pthread_mutex_t [BIO_NUM_OPS]"
+            },
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "VarDecl",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:condvarwait.c@102@F@bioWaitStepOfType@BIO_NUM_OPS",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/condvarwait.c",
+                    "linenum": 4
+                },
+                "type": "int"
+            },
+            "text": "BIO_NUM_OPS"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "VarDecl",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "unsigned"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Keyword",
+            "line": 7,
+            "sem": "VarDecl",
+            "text": "long"
+        },
+        {
+            "kind": "Identifier",
+            "line": 7,
+            "sem": "VarDecl",
+            "sym": {
+                "id": "c:condvarwait.c@236@F@bioWaitStepOfType@val",
+                "kind": "VarDecl",
+                "type": "unsigned long long"
+            },
+            "text": "val"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 7,
+            "sem": "DeclStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "val"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_pending"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "IfStmt",
+            "text": "if"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "IfStmt",
+            "text": "("
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:condvarwait.c@236@F@bioWaitStepOfType@val",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/condvarwait.c",
+                    "linenum": 7
+                },
+                "type": "unsigned long long"
+            },
+            "text": "val"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "BinaryOperator",
+            "text": "!="
+        },
+        {
+            "kind": "Literal",
+            "line": 10,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "IfStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_cond_wait"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_step_cond"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": ","
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 11,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "val"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": "="
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_pending"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 13,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "pthread_mutex_unlock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "("
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "&"
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "bio_mutex"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "["
+        },
+        {
+            "kind": "Identifier",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "sym": null,
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": "]"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 14,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Keyword",
+            "line": 15,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Identifier",
+            "line": 15,
+            "sem": "DeclRefExpr",
+            "sym": {
+                "id": "c:condvarwait.c@236@F@bioWaitStepOfType@val",
+                "kind": "VarDecl",
+                "ref": {
+                    "file": "/sa-bAbI/tokenizer/bin/condvarwait.c",
+                    "linenum": 7
+                },
+                "type": "unsigned long long"
+            },
+            "text": "val"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 15,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 16,
+            "sem": "CompoundStmt",
+            "text": "}"
+        }
+    ]
+}
