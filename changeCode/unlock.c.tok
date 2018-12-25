@@ -3,13 +3,13 @@
     "tokens": [
         {
             "kind": "Keyword",
-            "line": 2,
+            "line": 3,
             "sem": "StructDecl",
             "text": "struct"
         },
         {
             "kind": "Identifier",
-            "line": 2,
+            "line": 3,
             "sem": "StructDecl",
             "sym": {
                 "id": "c:@S@pthread_t",
@@ -20,25 +20,25 @@
         },
         {
             "kind": "Punctuation",
-            "line": 2,
+            "line": 3,
             "sem": "StructDecl",
             "text": "{"
         },
         {
             "kind": "Punctuation",
-            "line": 2,
+            "line": 3,
             "sem": "StructDecl",
             "text": "}"
         },
         {
             "kind": "Keyword",
-            "line": 3,
+            "line": 4,
             "sem": "StructDecl",
             "text": "struct"
         },
         {
             "kind": "Identifier",
-            "line": 3,
+            "line": 4,
             "sem": "StructDecl",
             "sym": {
                 "id": "c:@S@pthread_mutex",
@@ -49,35 +49,6 @@
         },
         {
             "kind": "Punctuation",
-            "line": 3,
-            "sem": "StructDecl",
-            "text": "{"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 3,
-            "sem": "StructDecl",
-            "text": "}"
-        },
-        {
-            "kind": "Keyword",
-            "line": 4,
-            "sem": "StructDecl",
-            "text": "struct"
-        },
-        {
-            "kind": "Identifier",
-            "line": 4,
-            "sem": "StructDecl",
-            "sym": {
-                "id": "c:@S@pthread_mutex_t",
-                "kind": "StructDecl",
-                "type": "struct pthread_mutex_t"
-            },
-            "text": "pthread_mutex_t"
-        },
-        {
-            "kind": "Punctuation",
             "line": 4,
             "sem": "StructDecl",
             "text": "{"
@@ -97,35 +68,6 @@
         {
             "kind": "Identifier",
             "line": 5,
-            "sem": "StructDecl",
-            "sym": {
-                "id": "c:@S@pthread_cond_t",
-                "kind": "StructDecl",
-                "type": "struct pthread_cond_t"
-            },
-            "text": "pthread_cond_t"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 5,
-            "sem": "StructDecl",
-            "text": "{"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 5,
-            "sem": "StructDecl",
-            "text": "}"
-        },
-        {
-            "kind": "Keyword",
-            "line": 6,
-            "sem": "StructDecl",
-            "text": "struct"
-        },
-        {
-            "kind": "Identifier",
-            "line": 6,
             "sem": "StructDecl",
             "sym": {
                 "id": "c:@S@list",
@@ -136,9 +78,61 @@
         },
         {
             "kind": "Punctuation",
+            "line": 5,
+            "sem": "StructDecl",
+            "text": "{"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 5,
+            "sem": "StructDecl",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "StructDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "StructDecl",
+            "sym": {
+                "id": "c:@S@pthread_mutex_t",
+                "kind": "StructDecl",
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
             "line": 6,
             "sem": "StructDecl",
             "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 6,
+            "sem": "FieldDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 6,
+            "sem": "FieldDecl",
+            "sym": {
+                "id": "c:@S@pthread_mutex_t@FI@i",
+                "kind": "FieldDecl",
+                "type": "int"
+            },
+            "text": "i"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 6,
+            "sem": "StructDecl",
+            "text": ";"
         },
         {
             "kind": "Punctuation",
@@ -157,11 +151,11 @@
             "line": 7,
             "sem": "StructDecl",
             "sym": {
-                "id": "c:@S@bio_job",
+                "id": "c:@S@pthread_cond_t",
                 "kind": "StructDecl",
-                "type": "struct bio_job"
+                "type": "struct pthread_cond_t"
             },
-            "text": "bio_job"
+            "text": "pthread_cond_t"
         },
         {
             "kind": "Punctuation",
@@ -170,114 +164,317 @@
             "text": "{"
         },
         {
-            "kind": "Identifier",
-            "line": 8,
-            "sem": "TypeRef",
-            "sym": {
-                "type": "time_t"
-            },
-            "text": "time_t"
-        },
-        {
-            "kind": "Identifier",
-            "line": 8,
-            "sem": "FieldDecl",
-            "sym": {
-                "id": "c:@S@bio_job@FI@time",
-                "kind": "FieldDecl",
-                "type": "time_t"
-            },
-            "text": "time"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 8,
-            "sem": "StructDecl",
-            "text": ";"
-        },
-        {
             "kind": "Keyword",
-            "line": 9,
+            "line": 7,
             "sem": "FieldDecl",
-            "text": "void"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 9,
-            "sem": "FieldDecl",
-            "text": "*"
+            "text": "int"
         },
         {
             "kind": "Identifier",
-            "line": 9,
+            "line": 7,
             "sem": "FieldDecl",
             "sym": {
-                "id": "c:@S@bio_job@FI@arg1",
+                "id": "c:@S@pthread_cond_t@FI@i",
                 "kind": "FieldDecl",
-                "type": "void *"
+                "type": "int"
             },
-            "text": "arg1"
+            "text": "i"
         },
         {
             "kind": "Punctuation",
-            "line": 9,
-            "sem": "FieldDecl",
-            "text": ","
-        },
-        {
-            "kind": "Punctuation",
-            "line": 9,
-            "sem": "FieldDecl",
-            "text": "*"
-        },
-        {
-            "kind": "Identifier",
-            "line": 9,
-            "sem": "FieldDecl",
-            "sym": {
-                "id": "c:@S@bio_job@FI@arg2",
-                "kind": "FieldDecl",
-                "type": "void *"
-            },
-            "text": "arg2"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 9,
-            "sem": "FieldDecl",
-            "text": ","
-        },
-        {
-            "kind": "Punctuation",
-            "line": 9,
-            "sem": "FieldDecl",
-            "text": "*"
-        },
-        {
-            "kind": "Identifier",
-            "line": 9,
-            "sem": "FieldDecl",
-            "sym": {
-                "id": "c:@S@bio_job@FI@arg3",
-                "kind": "FieldDecl",
-                "type": "void *"
-            },
-            "text": "arg3"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 9,
+            "line": 7,
             "sem": "StructDecl",
             "text": ";"
         },
         {
             "kind": "Punctuation",
-            "line": 10,
+            "line": 7,
             "sem": "StructDecl",
             "text": "}"
         },
         {
             "kind": "Keyword",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_mutex_lock",
+                "kind": "FunctionDecl",
+                "type": "int (struct pthread_mutex_t *)"
+            },
+            "text": "pthread_mutex_lock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 8,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@189@F@pthread_mutex_lock@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 8,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 8,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 8,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_mutex_unlock",
+                "kind": "FunctionDecl",
+                "type": "int (struct pthread_mutex_t *)"
+            },
+            "text": "pthread_mutex_unlock"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 9,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@260@F@pthread_mutex_unlock@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 9,
+            "sem": "ReturnStmt",
+            "text": "return"
+        },
+        {
+            "kind": "Literal",
+            "line": 9,
+            "sem": "IntegerLiteral",
+            "text": "0"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": ";"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 9,
+            "sem": "CompoundStmt",
+            "text": "}"
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@pthread_cond_wait",
+                "kind": "FunctionDecl",
+                "type": "void (struct pthread_cond_t *, struct pthread_mutex_t *)"
+            },
+            "text": "pthread_cond_wait"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "FunctionDecl",
+            "text": "("
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_cond_t"
+            },
+            "text": "pthread_cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@329@F@pthread_cond_wait@cond_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_cond_t *"
+            },
+            "text": "cond_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 10,
+            "sem": "ParmDecl",
+            "text": "struct"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "TypeRef",
+            "sym": {
+                "type": "struct pthread_mutex_t"
+            },
+            "text": "pthread_mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 10,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@360@F@pthread_cond_wait@mutex_t",
+                "kind": "ParmDecl",
+                "type": "struct pthread_mutex_t *"
+            },
+            "text": "mutex_t"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 10,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Keyword",
             "line": 11,
             "sem": "FunctionDecl",
             "text": "void"
@@ -287,11 +484,11 @@
             "line": 11,
             "sem": "FunctionDecl",
             "sym": {
-                "id": "c:@F@bioCreateBackgroundJob",
+                "id": "c:@F@pthread_cond_signal",
                 "kind": "FunctionDecl",
-                "type": "void (int, void *, void *, void *)"
+                "type": "void (struct pthread_cond_t *)"
             },
-            "text": "bioCreateBackgroundJob"
+            "text": "pthread_cond_signal"
         },
         {
             "kind": "Punctuation",
@@ -303,30 +500,16 @@
             "kind": "Keyword",
             "line": 11,
             "sem": "ParmDecl",
-            "text": "int"
+            "text": "struct"
         },
         {
             "kind": "Identifier",
             "line": 11,
-            "sem": "ParmDecl",
+            "sem": "TypeRef",
             "sym": {
-                "id": "c:unlock.c@260@F@bioCreateBackgroundJob@type",
-                "kind": "ParmDecl",
-                "type": "int"
+                "type": "struct pthread_cond_t"
             },
-            "text": "type"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 11,
-            "sem": "FunctionDecl",
-            "text": ","
-        },
-        {
-            "kind": "Keyword",
-            "line": 11,
-            "sem": "ParmDecl",
-            "text": "void"
+            "text": "pthread_cond_t"
         },
         {
             "kind": "Punctuation",
@@ -339,69 +522,11 @@
             "line": 11,
             "sem": "ParmDecl",
             "sym": {
-                "id": "c:unlock.c@270@F@bioCreateBackgroundJob@arg1",
+                "id": "c:unlock.c@419@F@pthread_cond_signal@cond_t",
                 "kind": "ParmDecl",
-                "type": "void *"
+                "type": "struct pthread_cond_t *"
             },
-            "text": "arg1"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 11,
-            "sem": "FunctionDecl",
-            "text": ","
-        },
-        {
-            "kind": "Keyword",
-            "line": 11,
-            "sem": "ParmDecl",
-            "text": "void"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 11,
-            "sem": "ParmDecl",
-            "text": "*"
-        },
-        {
-            "kind": "Identifier",
-            "line": 11,
-            "sem": "ParmDecl",
-            "sym": {
-                "id": "c:unlock.c@282@F@bioCreateBackgroundJob@arg2",
-                "kind": "ParmDecl",
-                "type": "void *"
-            },
-            "text": "arg2"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 11,
-            "sem": "FunctionDecl",
-            "text": ","
-        },
-        {
-            "kind": "Keyword",
-            "line": 11,
-            "sem": "ParmDecl",
-            "text": "void"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 11,
-            "sem": "ParmDecl",
-            "text": "*"
-        },
-        {
-            "kind": "Identifier",
-            "line": 11,
-            "sem": "ParmDecl",
-            "sym": {
-                "id": "c:unlock.c@294@F@bioCreateBackgroundJob@arg3",
-                "kind": "ParmDecl",
-                "type": "void *"
-            },
-            "text": "arg3"
+            "text": "cond_t"
         },
         {
             "kind": "Punctuation",
@@ -410,29 +535,162 @@
             "text": ")"
         },
         {
+            "kind": "Keyword",
+            "line": 12,
+            "sem": "FunctionDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "FunctionDecl",
+            "sym": {
+                "id": "c:@F@bioCreateBackgroundJob",
+                "kind": "FunctionDecl",
+                "type": "void (int, void *, void *, void *)"
+            },
+            "text": "bioCreateBackgroundJob"
+        },
+        {
             "kind": "Punctuation",
-            "line": 11,
-            "sem": "CompoundStmt",
-            "text": "{"
+            "line": 12,
+            "sem": "FunctionDecl",
+            "text": "("
         },
         {
             "kind": "Keyword",
             "line": 12,
-            "sem": "VarDecl",
-            "text": "const"
-        },
-        {
-            "kind": "Keyword",
-            "line": 12,
-            "sem": "VarDecl",
+            "sem": "ParmDecl",
             "text": "int"
         },
         {
             "kind": "Identifier",
             "line": 12,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@479@F@bioCreateBackgroundJob@type",
+                "kind": "ParmDecl",
+                "type": "int"
+            },
+            "text": "type"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 12,
+            "sem": "ParmDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@489@F@bioCreateBackgroundJob@arg1",
+                "kind": "ParmDecl",
+                "type": "void *"
+            },
+            "text": "arg1"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 12,
+            "sem": "ParmDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@501@F@bioCreateBackgroundJob@arg2",
+                "kind": "ParmDecl",
+                "type": "void *"
+            },
+            "text": "arg2"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "FunctionDecl",
+            "text": ","
+        },
+        {
+            "kind": "Keyword",
+            "line": 12,
+            "sem": "ParmDecl",
+            "text": "void"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "ParmDecl",
+            "text": "*"
+        },
+        {
+            "kind": "Identifier",
+            "line": 12,
+            "sem": "ParmDecl",
+            "sym": {
+                "id": "c:unlock.c@513@F@bioCreateBackgroundJob@arg3",
+                "kind": "ParmDecl",
+                "type": "void *"
+            },
+            "text": "arg3"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "FunctionDecl",
+            "text": ")"
+        },
+        {
+            "kind": "Punctuation",
+            "line": 12,
+            "sem": "CompoundStmt",
+            "text": "{"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "const"
+        },
+        {
+            "kind": "Keyword",
+            "line": 13,
+            "sem": "VarDecl",
+            "text": "int"
+        },
+        {
+            "kind": "Identifier",
+            "line": 13,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "type": "const int"
             },
@@ -440,19 +698,19 @@
         },
         {
             "kind": "Punctuation",
-            "line": 12,
+            "line": 13,
             "sem": "VarDecl",
             "text": "="
         },
         {
             "kind": "Literal",
-            "line": 12,
+            "line": 13,
             "sem": "IntegerLiteral",
             "text": "100"
         },
         {
             "kind": "Punctuation",
-            "line": 12,
+            "line": 13,
             "sem": "DeclStmt",
             "text": ";"
         },
@@ -482,7 +740,7 @@
             "line": 14,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@344@F@bioCreateBackgroundJob@bio_threads",
+                "id": "c:unlock.c@562@F@bioCreateBackgroundJob@bio_threads",
                 "kind": "VarDecl",
                 "type": "struct pthread_t [100]"
             },
@@ -499,11 +757,11 @@
             "line": 14,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 12
+                    "linenum": 13
                 },
                 "type": "const int"
             },
@@ -547,7 +805,7 @@
             "line": 15,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@398@F@bioCreateBackgroundJob@bio_mutex",
+                "id": "c:unlock.c@616@F@bioCreateBackgroundJob@bio_mutex",
                 "kind": "VarDecl",
                 "type": "struct pthread_mutex_t [100]"
             },
@@ -564,11 +822,11 @@
             "line": 15,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 12
+                    "linenum": 13
                 },
                 "type": "const int"
             },
@@ -612,7 +870,7 @@
             "line": 16,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@456@F@bioCreateBackgroundJob@bio_newjob_cond",
+                "id": "c:unlock.c@674@F@bioCreateBackgroundJob@bio_newjob_cond",
                 "kind": "VarDecl",
                 "type": "struct pthread_cond_t [100]"
             },
@@ -629,11 +887,11 @@
             "line": 16,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 12
+                    "linenum": 13
                 },
                 "type": "const int"
             },
@@ -677,7 +935,7 @@
             "line": 17,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@519@F@bioCreateBackgroundJob@bio_step_cond",
+                "id": "c:unlock.c@737@F@bioCreateBackgroundJob@bio_step_cond",
                 "kind": "VarDecl",
                 "type": "struct pthread_cond_t [100]"
             },
@@ -694,11 +952,11 @@
             "line": 17,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 12
+                    "linenum": 13
                 },
                 "type": "const int"
             },
@@ -748,7 +1006,7 @@
             "line": 18,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@580@F@bioCreateBackgroundJob@bio_jobs",
+                "id": "c:unlock.c@798@F@bioCreateBackgroundJob@bio_jobs",
                 "kind": "VarDecl",
                 "type": "struct list *[100]"
             },
@@ -765,11 +1023,11 @@
             "line": 18,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 12
+                    "linenum": 13
                 },
                 "type": "const int"
             },
@@ -789,128 +1047,34 @@
         },
         {
             "kind": "Keyword",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "struct"
-        },
-        {
-            "kind": "Keyword",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "struct"
-        },
-        {
-            "kind": "Identifier",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "bio_job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "*"
-        },
-        {
-            "kind": "Identifier",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "="
-        },
-        {
-            "kind": "Identifier",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "malloc"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "("
-        },
-        {
-            "kind": "Keyword",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "sizeof"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "("
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": "*"
-        },
-        {
-            "kind": "Identifier",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": ")"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": ")"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 20,
-            "sem": "CompoundStmt",
-            "text": ";"
-        },
-        {
-            "kind": "Keyword",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "text": "static"
         },
         {
             "kind": "Keyword",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "text": "unsigned"
         },
         {
             "kind": "Keyword",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "text": "long"
         },
         {
             "kind": "Keyword",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "text": "long"
         },
         {
             "kind": "Identifier",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "sym": {
-                "id": "c:unlock.c@684@F@bioCreateBackgroundJob@bio_pending",
+                "id": "c:unlock.c@845@F@bioCreateBackgroundJob@bio_pending",
                 "kind": "VarDecl",
                 "type": "unsigned long long [100]"
             },
@@ -918,20 +1082,20 @@
         },
         {
             "kind": "Punctuation",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "text": "["
         },
         {
             "kind": "Identifier",
-            "line": 22,
+            "line": 19,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@312@F@bioCreateBackgroundJob@BIO_NUM_OPS",
+                "id": "c:unlock.c@531@F@bioCreateBackgroundJob@BIO_NUM_OPS",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 12
+                    "linenum": 13
                 },
                 "type": "const int"
             },
@@ -939,224 +1103,49 @@
         },
         {
             "kind": "Punctuation",
-            "line": 22,
+            "line": 19,
             "sem": "VarDecl",
             "text": "]"
         },
         {
             "kind": "Punctuation",
-            "line": 22,
+            "line": 19,
             "sem": "DeclStmt",
             "text": ";"
         },
         {
             "kind": "Identifier",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "text": "->"
-        },
-        {
-            "kind": "Identifier",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "time"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "text": "="
-        },
-        {
-            "kind": "Identifier",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "time"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "text": "("
-        },
-        {
-            "kind": "Identifier",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "NULL"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "text": ")"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 23,
-            "sem": "CompoundStmt",
-            "text": ";"
-        },
-        {
-            "kind": "Identifier",
-            "line": 24,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 24,
-            "sem": "CompoundStmt",
-            "text": "->"
-        },
-        {
-            "kind": "Identifier",
-            "line": 24,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "arg1"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 24,
-            "sem": "CompoundStmt",
-            "text": "="
-        },
-        {
-            "kind": "Identifier",
-            "line": 24,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "arg1"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 24,
-            "sem": "CompoundStmt",
-            "text": ";"
-        },
-        {
-            "kind": "Identifier",
-            "line": 25,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 25,
-            "sem": "CompoundStmt",
-            "text": "->"
-        },
-        {
-            "kind": "Identifier",
-            "line": 25,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "arg2"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 25,
-            "sem": "CompoundStmt",
-            "text": "="
-        },
-        {
-            "kind": "Identifier",
-            "line": 25,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "arg2"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 25,
-            "sem": "CompoundStmt",
-            "text": ";"
-        },
-        {
-            "kind": "Identifier",
-            "line": 26,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 26,
-            "sem": "CompoundStmt",
-            "text": "->"
-        },
-        {
-            "kind": "Identifier",
-            "line": 26,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "arg3"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 26,
-            "sem": "CompoundStmt",
-            "text": "="
-        },
-        {
-            "kind": "Identifier",
-            "line": 26,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "arg3"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 26,
-            "sem": "CompoundStmt",
-            "text": ";"
-        },
-        {
-            "kind": "Identifier",
-            "line": 27,
+            "line": 20,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "",
+                "id": "c:@F@pthread_mutex_lock",
                 "kind": "FunctionDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 27
+                    "linenum": 8
                 },
-                "type": "int ()"
+                "type": "int (struct pthread_mutex_t *)"
             },
             "text": "pthread_mutex_lock"
         },
         {
             "kind": "Punctuation",
-            "line": 27,
+            "line": 20,
             "sem": "CallExpr",
             "text": "("
         },
         {
             "kind": "Punctuation",
-            "line": 27,
+            "line": 20,
             "sem": "UnaryOperator",
             "text": "&"
         },
         {
             "kind": "Identifier",
-            "line": 27,
+            "line": 20,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@398@F@bioCreateBackgroundJob@bio_mutex",
+                "id": "c:unlock.c@616@F@bioCreateBackgroundJob@bio_mutex",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
@@ -1168,20 +1157,20 @@
         },
         {
             "kind": "Punctuation",
-            "line": 27,
+            "line": 20,
             "sem": "ArraySubscriptExpr",
             "text": "["
         },
         {
             "kind": "Identifier",
-            "line": 27,
+            "line": 20,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@260@F@bioCreateBackgroundJob@type",
+                "id": "c:unlock.c@479@F@bioCreateBackgroundJob@type",
                 "kind": "ParmDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 11
+                    "linenum": 12
                 },
                 "type": "int"
             },
@@ -1189,96 +1178,32 @@
         },
         {
             "kind": "Punctuation",
-            "line": 27,
+            "line": 20,
             "sem": "ArraySubscriptExpr",
             "text": "]"
         },
         {
             "kind": "Punctuation",
-            "line": 27,
+            "line": 20,
             "sem": "CallExpr",
             "text": ")"
         },
         {
             "kind": "Punctuation",
-            "line": 27,
+            "line": 20,
             "sem": "CompoundStmt",
             "text": ";"
         },
         {
             "kind": "Identifier",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "listAddNodeTail"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "text": "("
-        },
-        {
-            "kind": "Identifier",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "bio_jobs"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "text": "["
-        },
-        {
-            "kind": "Identifier",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "type"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "text": "]"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "text": ","
-        },
-        {
-            "kind": "Identifier",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "sym": null,
-            "text": "job"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "text": ")"
-        },
-        {
-            "kind": "Punctuation",
-            "line": 28,
-            "sem": "CompoundStmt",
-            "text": ";"
-        },
-        {
-            "kind": "Identifier",
-            "line": 29,
+            "line": 21,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@684@F@bioCreateBackgroundJob@bio_pending",
+                "id": "c:unlock.c@845@F@bioCreateBackgroundJob@bio_pending",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 22
+                    "linenum": 19
                 },
                 "type": "unsigned long long [100]"
             },
@@ -1286,20 +1211,20 @@
         },
         {
             "kind": "Punctuation",
-            "line": 29,
+            "line": 21,
             "sem": "ArraySubscriptExpr",
             "text": "["
         },
         {
             "kind": "Identifier",
-            "line": 29,
+            "line": 21,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@260@F@bioCreateBackgroundJob@type",
+                "id": "c:unlock.c@479@F@bioCreateBackgroundJob@type",
                 "kind": "ParmDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 11
+                    "linenum": 12
                 },
                 "type": "int"
             },
@@ -1307,55 +1232,55 @@
         },
         {
             "kind": "Punctuation",
-            "line": 29,
+            "line": 21,
             "sem": "ArraySubscriptExpr",
             "text": "]"
         },
         {
             "kind": "Punctuation",
-            "line": 29,
+            "line": 21,
             "sem": "UnaryOperator",
             "text": "++"
         },
         {
             "kind": "Punctuation",
-            "line": 29,
+            "line": 21,
             "sem": "CompoundStmt",
             "text": ";"
         },
         {
             "kind": "Identifier",
-            "line": 30,
+            "line": 22,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "",
+                "id": "c:@F@pthread_cond_signal",
                 "kind": "FunctionDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 30
+                    "linenum": 11
                 },
-                "type": "int ()"
+                "type": "void (struct pthread_cond_t *)"
             },
             "text": "pthread_cond_signal"
         },
         {
             "kind": "Punctuation",
-            "line": 30,
+            "line": 22,
             "sem": "CallExpr",
             "text": "("
         },
         {
             "kind": "Punctuation",
-            "line": 30,
+            "line": 22,
             "sem": "UnaryOperator",
             "text": "&"
         },
         {
             "kind": "Identifier",
-            "line": 30,
+            "line": 22,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@456@F@bioCreateBackgroundJob@bio_newjob_cond",
+                "id": "c:unlock.c@674@F@bioCreateBackgroundJob@bio_newjob_cond",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
@@ -1367,20 +1292,20 @@
         },
         {
             "kind": "Punctuation",
-            "line": 30,
+            "line": 22,
             "sem": "ArraySubscriptExpr",
             "text": "["
         },
         {
             "kind": "Identifier",
-            "line": 30,
+            "line": 22,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@260@F@bioCreateBackgroundJob@type",
+                "id": "c:unlock.c@479@F@bioCreateBackgroundJob@type",
                 "kind": "ParmDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 11
+                    "linenum": 12
                 },
                 "type": "int"
             },
@@ -1388,55 +1313,55 @@
         },
         {
             "kind": "Punctuation",
-            "line": 30,
+            "line": 22,
             "sem": "ArraySubscriptExpr",
             "text": "]"
         },
         {
             "kind": "Punctuation",
-            "line": 30,
+            "line": 22,
             "sem": "CallExpr",
             "text": ")"
         },
         {
             "kind": "Punctuation",
-            "line": 30,
+            "line": 22,
             "sem": "CompoundStmt",
             "text": ";"
         },
         {
             "kind": "Identifier",
-            "line": 31,
+            "line": 23,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "",
+                "id": "c:@F@pthread_mutex_unlock",
                 "kind": "FunctionDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 31
+                    "linenum": 9
                 },
-                "type": "int ()"
+                "type": "int (struct pthread_mutex_t *)"
             },
             "text": "pthread_mutex_unlock"
         },
         {
             "kind": "Punctuation",
-            "line": 31,
+            "line": 23,
             "sem": "CallExpr",
             "text": "("
         },
         {
             "kind": "Punctuation",
-            "line": 31,
+            "line": 23,
             "sem": "UnaryOperator",
             "text": "&"
         },
         {
             "kind": "Identifier",
-            "line": 31,
+            "line": 23,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@398@F@bioCreateBackgroundJob@bio_mutex",
+                "id": "c:unlock.c@616@F@bioCreateBackgroundJob@bio_mutex",
                 "kind": "VarDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
@@ -1448,20 +1373,20 @@
         },
         {
             "kind": "Punctuation",
-            "line": 31,
+            "line": 23,
             "sem": "ArraySubscriptExpr",
             "text": "["
         },
         {
             "kind": "Identifier",
-            "line": 31,
+            "line": 23,
             "sem": "DeclRefExpr",
             "sym": {
-                "id": "c:unlock.c@260@F@bioCreateBackgroundJob@type",
+                "id": "c:unlock.c@479@F@bioCreateBackgroundJob@type",
                 "kind": "ParmDecl",
                 "ref": {
                     "file": "/sa-bAbI/tokenizer/bin/unlock.c",
-                    "linenum": 11
+                    "linenum": 12
                 },
                 "type": "int"
             },
@@ -1469,25 +1394,25 @@
         },
         {
             "kind": "Punctuation",
-            "line": 31,
+            "line": 23,
             "sem": "ArraySubscriptExpr",
             "text": "]"
         },
         {
             "kind": "Punctuation",
-            "line": 31,
+            "line": 23,
             "sem": "CallExpr",
             "text": ")"
         },
         {
             "kind": "Punctuation",
-            "line": 31,
+            "line": 23,
             "sem": "CompoundStmt",
             "text": ";"
         },
         {
             "kind": "Punctuation",
-            "line": 32,
+            "line": 24,
             "sem": "CompoundStmt",
             "text": "}"
         }

@@ -1,3 +1,4 @@
+#include<stdlib.h>
 #include <stdlib.h>
 #include <string.h>
 struct pthread_mutex_t{ int i; };
@@ -14,7 +15,7 @@ unsigned long long bioWaitStepOfType(int type) {
     unsigned long long val;
     pthread_mutex_lock(&bio_mutex[type]);
     val = bio_pending[type];
-    if (val != 0) {
+    while (1) {
         pthread_cond_wait(&bio_step_cond[type],&bio_mutex[type]);
         val = bio_pending[type];
     }
